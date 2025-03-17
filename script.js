@@ -8,7 +8,7 @@ const person = {
   },
 };
 
-const greetFunction = person.greet;
+const greetFunction = person.greet.bind(person);
 
 greetFunction();
 
